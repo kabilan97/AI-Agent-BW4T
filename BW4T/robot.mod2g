@@ -3,19 +3,18 @@ use robot as actionspec.
 exit=nogoals.
 
 module main {
-	if a-goal( in(Place) ) then goTo(Place).
 	
 	% Exercise 2.5a: insert code for action rules that allows an agent to systematically search for blocks.
-	if goal(sequence(List),length(List,X),sequenceIndex(X)) then {
-		forall goal(in(Y)) do drop(in(Y)).
-	}
 	
-	if a-goal(at(Block)) then goToBlock(Block).
+	if goal( in(Place) ) then goTo(Place).
 	
-	if goal(at(Block), nextColorInSeq(Color), color(Block,Color)) then pickUp(Block).
+	if goal( atBlock(Block)) then goToBlock(Block).
 	
-	if goal(holding(Block)) then putDown.
+	if goal(holding(Block)) then pickUp(Block)+adopt(in('DropZone')).
 	
+	if bel(in('DropZone')) then putDown.
+	
+	if bel(finishedGame) then delete(state(traveling)) + insert(state(arrived)).
 	
 	
 	

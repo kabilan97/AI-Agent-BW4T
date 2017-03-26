@@ -1,0 +1,23 @@
+use robot as knowledge.
+
+% The goTo action makes the agent move to a place (location) in the BW4T environment.
+% As long as the agent has not arrived at the place it is going to, it will be in "traveling" mode.
+define goTo(Location) with
+	pre { not(state(traveling)), place(Location) }
+	post { state(arrived) }
+
+% Exercise 2.3a: insert a specification for the goToBlock(Block) action.
+% Make sure that the agent is in the same room as the block 
+define goToBlock(Block) with 
+	pre{ block(Block,Color,Room),in(Room),not(state(traveling))}
+	post{ state(arrived)}
+% Exercise 2.3b: insert a specification for the pickUp action.
+% If the agent is at the block and it doesn't hold another block then it can hold that block
+define pickUp(Block) with 
+	pre {atBlock(Block),not(holding(_)),block(Block,Color,Room))}
+	post {holding(Block),not(block(Block,Color,Room))}
+% Exercise 2.3c: insert a specification for the putDown action.
+% if the agent is at the dropzone and its holding an b
+define putDown with
+ 	pre{at('DropZone'), holding(Block)}
+ 	post{not(holding(Block))}

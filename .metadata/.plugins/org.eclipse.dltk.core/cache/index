@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="ASCII"?>
-<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="2" environment="org.eclipse.dltk.core.environment.localEnvironment">
-  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/bw4t.mas2g" timestamp="1490091610193" lastAccessTime="1490219964509"/>
-  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T" timestamp="1490219463954" lastAccessTime="1490219964510">
-    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3300098983/1.idx"/>
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="166" environment="org.eclipse.dltk.core.environment.localEnvironment">
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/.project" timestamp="1489965070417" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/bw4t-client-3.8.6-jar-with-dependencies.jar" timestamp="1489965070485" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/bw4t-environment-store-3.8.6.jar" timestamp="1489965690018" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/bw4t-scenario-editor-3.8.6.jar" timestamp="1489965700867" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/bw4t-server-3.8.6.jar" timestamp="1489965684013" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/BW4T3_instructions.pdf" timestamp="1490099264299" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/BW4T3_specification.pdf" timestamp="1490312599099" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/robot.pl" timestamp="1490312106867" lastAccessTime="1490487163538"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/robot.test2g" timestamp="1490106305938" lastAccessTime="1490487163538"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T" timestamp="1490312599100" lastAccessTime="1490486789164">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3300098983/135.idx"/>
+  </entries>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/bw4t.mas2g" timestamp="1490363176021" lastAccessTime="1490487163533"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/robot.act2g" timestamp="1490304475887" lastAccessTime="1490487163538"/>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/robot.mod2g" timestamp="1490364658136" lastAccessTime="1490487163538">
+    <attributes name="indexed" location="2838196607/1595181313/161.idx"/>
+  </entries>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/robotInit.mod2g" timestamp="1490303599268" lastAccessTime="1490487163538">
+    <attributes name="indexed" location="2838196607/1595181313/159.idx"/>
+  </entries>
+  <entries path="C:/Users/kabi9/OneDrive/Documenten/BW4T/BW4T/robotEvents.mod2g" timestamp="1490373969534" lastAccessTime="1490487163538">
+    <attributes name="indexed" location="2838196607/1595181313/165.idx"/>
   </entries>
 </cache:CacheIndex>

@@ -10,11 +10,8 @@ module robotInit {
 	% Record the intial place the agent is at.
 	if percept(at(Room)) then insert(at(Room)).
 	
-	%Intialize with the first index
+	%add the initial index
 	if percept(sequenceIndex(Index)) then insert(sequenceIndex(Index)).
-	
-	% Adopt initial goals.
-	forall bel( room(Place) ) do adopt( in(Place) ).
 
 	% Exercise 2.1a: insert rules for processing percepts that are sent only at the beginning of a session, 
 	%  and/or need to be initialized.
@@ -24,5 +21,7 @@ module robotInit {
 	
 	%Send the sequence for the list.
 	if percept(sequence(List)) then insert(sequence(List)).
+	
+	if true then adopt(finishedGame).
 	
 }
