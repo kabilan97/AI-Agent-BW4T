@@ -1,15 +1,97 @@
 use bw4t.
 use robot as knowledge.
 use robot as module.
+use robot as actionspec.
+
 timeout = 300.
 
 test main with
+	
 	pre { true }
 	in {				
-		% Assignment 3.1: insert test conditions for the mandatory requirements.
+
+			%Assignment 4.3 Functional tests
 			
-		% Assignment 3.2: insert any additional conditions for further requirements.
+			% 1. An agent should not drop a a block outside a room. This should never happen therefore we used template A-incorrect.
+			never done(putDown), bel(holding(Block)), bel(not(in(Room)), not(in("DropZone"))).
+			
+			% 2. An agent should not pick up a block that is not of the next needed color. 
+			% Template A-incorrect used.
+			never done(pickUp(Block)), bel(not(nextColorInSeq(Color))), bel(color(Block, Color)). 
+			
+			% 3. An agent that is holding the block that is not of the next needed color should not enter the drop zone.
+			%template A-incorrect used
+			never done (goTo("DropZone")), not(bel(holding(Block))),bel(nextColorInSeq(Color)), bel(color(Block, Color)).
+			
+			% 4. An agent should not leave the drop zone while holding a block.
+			% Template A-incorrect.
+			never done(goTo(Location)), bel(holding(Block)),bel(in("DropZone")).
+			
+		% Percepts that use P-Once change template (GOAL programming guide). The percepts are only received once. 
+		percept (zone(ID, Name, X, Y, Neighbours)) leadsto bel(zone(ID, Name, X, Y, Neighbours)).
+		
+		percept (state(State)) leadsto bel(state(State)).
+		
+		percept (at(Room)) leadsto bel(at(Room)).
+		
+		percept (sequenceIndex(Index)) leadsto bel(sequenceIndex(Index)).
+		
+		percept (place(Place)) leadsto bel(place(Place)).
+		
+		percept (sequence(List)) leadsto bel(sequence(List)).
+		
+				
+		%Percepts - using P-on-change template (GOAL programming guide) we test whether the change in beliefs are correct when the agents percepts new conditions.
+		percept (state(State)) leadsto bel(state(State)).
+		percept (state(NewState)),bel(state(State)) , not(bel(state(State)==state(NewState))) leadsto not(bel(state(State))).
+		
+		percept (in(Place)) leadsto bel(in(Place)).
+		percept (in(NewPlace)),bel(in(Place)) , not(bel(in(Place)==in(NewPlace))) leadsto not(bel(in(Place))).
+		
+		percept (at(Place)) leadsto bel(at(Place)).
+		percept (at(NewPlace)),bel(at(Place)) , not(bel(at(Place)==at(NewPlace))) leadsto not(bel(at(Place))).
+		
+		percept (holding(Block)) leadsto bel(holding(Block)).
+		percept (holding(NewBlock)),bel(holding(Block)) , not(bel(holding(Block)==holding(NewBlock))) leadsto not(bel(holding(Block))).
+		
+		percept (atBlock(Block)) leadsto bel(atBlock(Block)).
+		percept (atBlock(NewBlock)),bel(atBlock(Block)) , not(bel(atBlock(Block)==atBlock(NewBlock))) leadsto not(bel(atBlock(Block))).
 		 
+		percept (color(Block, Color), in(Room)) leadsto bel (color(Block, Color), in(Room)).
+		not (percept(color(Block, Color), in(Room))), bel(color(Block, Color), in(Room)) leadsto not(bel(color(Block, Color), in(Room))).
+		
+		bel(in(Room)) leadsto bel(visited(Room)).
+		
+		
+		%  Don't hold a block if you're holding a block.
+		never goal(holding(Block)), bel(holding(OtherBlock)).
+		
+		%If holding block goal has been met then it will delete the atblock goal.
+		not(goal(holding(Block))) leadsto not(goal(atBlock(Block))).
+		
+		%  If you're not in a Room then then there is no goal for you to be at a block. 
+		% If you're in Dropzone then you should not have a goal to be at a block as well.
+		bel(not(in(Room)), in("DropZone")) leadsto not(goal(atBlock(Block))).
+				
+		% If in Dropzone and the old index is equal to the new index then the game is finished. 
+		bel(in("DropZone"), (sequenceIndex(Index)==sequenceIndex(NewIndex))) leadsto done(finishedGame).
+		
+		% Testing actions
+		
+		% If you're in a room, not in Dropzone, and youre at a block which has the next color in sequence you should have picked the block up already'
+		bel(in(Room),not(in('DropZone'))) leadsto done(pickUp(Block)).
+		% Never pick up a block in Dropzone and if youre not in a room. 
+		never done(pickUp(Block)), bel(in("DropZone"), not(in(Room))).
+		
+		% GoToBlock tests
+		never done(goToBlock(Block)), bel(in(Room), not(nextColorInSeq(Color)), color(Block, Color)).
+		
+		% PutDown test
+		% Never putDown a Block if you're not in DropZone
+		never done(putDown), bel(not(in("DropZone"))).
+		
+		
+		
 	}
 	post { true }
 	

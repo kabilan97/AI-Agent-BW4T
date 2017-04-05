@@ -15,7 +15,8 @@
 room(PlaceID) :- zone(_,PlaceID,_,_,Neighbours), length(Neighbours,1).
 
 % Exercise 2.2: insert a definition of the predicate "nextColorInSeq(Color)".
+%the next color is equeal to the Xth index in the list of the sequence
 nextColorInSeq(Color) :- sequence(Y), sequenceIndex(X), nth0(X,Y,Color).
 
-%Final predicate
+%Final predicate when the length of the list is equal to the sequenceindex
 finishedGame:-sequence(List),length(List,X), sequenceIndex(X).
