@@ -1,0 +1,30 @@
+use robot as knowledge.
+use robot as actionspec.
+exit=nogoals.
+
+module main {
+	
+	% Exercise 2.5a: insert code for action rules that allows an agent to systematically search for blocks.
+	
+	%if you have a goal to go to place you will perform the action goto
+	if goal( in(Place) ) then goTo(Place).
+	
+	%if you have a goal to go to a block then perform the action gotoBlock
+	if goal( atBlock(Block)) then goToBlock(Block).
+	
+	%if you are holding a block you will pick up that block and adopt a goal to the dropzone
+	if goal(holding(Block)) then pickUp(Block)+adopt(in('DropZone')).
+	
+	%if youre at the dropzone then you will drop the block
+	if bel(in('DropZone'),holding(Block),nextColorInSeq(Color),color(Block,Color)) then putDown.
+	
+	if bel(in(Room),not(in('DropZone')),holding(Block),nextColorInSeq(Color),not(color(Block,Color))) then putDown.
+	
+	%if finished goal has been accomplishes then the agent will set its state to arrived 
+	if bel(finishedGame, not(occupied(Room))) then adopt(in(Room)). 
+	
+	
+	
+	% Exercise 2.6a: insert code for action rules that makes the agent deliver a block when it 
+	%   knows about a block that can be delivered.
+}

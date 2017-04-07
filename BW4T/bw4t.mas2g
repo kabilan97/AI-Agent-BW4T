@@ -1,7 +1,7 @@
 use "bw4t-client-3.8.6-jar-with-dependencies.jar" as environment with 
 	clientip ="localhost", clientport="2000", 
 	serverip = "localhost", serverport = "8000",
-	agentcount = "1", humancount = "0", launchgui = "false", goal = "true".
+	agentcount = "3", humancount = "0", launchgui = "false", goal = "true".
 
 %Name: Kabilan Gnanavarothayan
 %Studentnumber: 4600223
