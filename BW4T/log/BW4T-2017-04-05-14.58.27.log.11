@@ -1,0 +1,49 @@
+15:00:29,271 - sequence
+15:00:29,271 - room RoomA3 contains blocks:  O G
+15:00:29,271 - room RoomA2 contains blocks:  Y R P P P Y R Y B
+15:00:29,272 - room RoomB3 contains blocks:  B P R
+15:00:29,272 - room RoomC1 contains blocks:  B O
+15:00:29,272 - room RoomA1 contains blocks: 
+15:00:29,272 - room RoomB2 contains blocks:  B G B W
+15:00:29,272 - room RoomC3 contains blocks:  R G W
+15:00:29,273 - room RoomB1 contains blocks:  O P R
+15:00:29,273 - room RoomC2 contains blocks:  W O
+15:00:29,273 - sequence Y B B R P G
+15:00:46,695 - action Bot_3 goTo(RoomB3)
+15:00:50,450 - action Bot_3 goTo(RoomA1)
+15:00:53,858 - action Bot_3 goTo(RoomA3)
+15:00:55,599 - action Bot_3 goTo(DropZone)
+15:01:00,290 - action Bot_3 goTo(RoomC2)
+15:01:03,777 - action Bot_3 goTo(RoomB1)
+15:01:06,796 - action Bot_3 goTo(RoomC1)
+15:01:09,367 - action Bot_3 goTo(RoomB2)
+15:01:12,395 - action Bot_3 goTo(RoomC3)
+15:01:15,411 - action Bot_3 goTo(RoomA2)
+15:01:19,273 - action Bot_3 goToBlock(47)
+15:01:19,329 - action Bot_3 pickUp(47)
+15:01:19,469 - action Bot_3 goTo(DropZone)
+15:01:24,471 - action Bot_3 putDown
+15:01:24,703 - action Bot_3 goTo(RoomB3)
+15:01:28,495 - action Bot_3 pickUp(49)
+15:01:28,567 - action Bot_3 goTo(DropZone)
+15:01:32,197 - action Bot_3 putDown
+15:01:32,410 - action Bot_3 goTo(RoomC1)
+15:01:32,467 - total time is 2 minutes and 37 seconds
+15:01:32,467 - agentsummary Bot_1 handicaps none
+15:01:32,467 - agentsummary robot gooddrops 0
+15:01:32,468 - agentsummary robot wrongdrops 0
+15:01:32,468 - agentsummary robot nmessage 0
+15:01:32,468 - agentsummary robot idletime 0.0
+15:01:32,468 - agentsummary robot nroomsentered 0
+15:01:32,468 - agentsummary Bot_2 handicaps none
+15:01:32,468 - agentsummary robot_0 gooddrops 0
+15:01:32,468 - agentsummary robot_0 wrongdrops 0
+15:01:32,468 - agentsummary robot_0 nmessage 0
+15:01:32,468 - agentsummary robot_0 idletime 0.0
+15:01:32,468 - agentsummary robot_0 nroomsentered 0
+15:01:32,468 - agentsummary Bot_3 handicaps none
+15:01:32,468 - agentsummary robot_1 gooddrops 2
+15:01:32,468 - agentsummary robot_1 wrongdrops 0
+15:01:32,468 - agentsummary robot_1 nmessage 0
+15:01:32,469 - agentsummary robot_1 idletime 7.342
+15:01:32,469 - agentsummary robot_1 nroomsentered 13

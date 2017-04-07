@@ -36,7 +36,7 @@ module robotEvents {
 	
 	%For every room visited it will add the visited predicate in the belief base.
 	forall bel(in(Room)) do insert(visited(Room)).
-	
+
 	% Exercise 2.5b: insert code for goal management that allows an agent to systematically search for blocks. (if needed)
 	
 	%If the place hasnt been visited yet, it will implement a goal to go to that room and make sure that it isn't on an other goal to go to a Room.
@@ -50,6 +50,10 @@ module robotEvents {
 	
 	%If the agent is on the goal to hold that block and it is in the room, it will go at that block.
 	if goal(holding(Block)), bel(in(Room),block(Block,Color,Room)), not(goal(atBlock(X))) then adopt(atBlock(Block)).
+	
+	%if bel(in(Room), not(in("DropZone")), nextColorInSeq(Color), block(Block, Color, Room), holding(Block)) then drop(holding(Block)) + drop(atBlock(Block)).
+
+	if goal(holding(block)), bel(block(Block, Color, Room), nextColorInSeq(Color)), bel(holding(Block)) then drop(holding(Block)).
 	
 
 }
