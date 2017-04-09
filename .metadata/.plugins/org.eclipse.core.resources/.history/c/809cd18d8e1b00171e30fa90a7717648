@@ -1,0 +1,80 @@
+use robot as knowledge.
+
+module robotEvents {
+	
+	% Update the agent's state of movement.
+	forall bel( state(State)), percept(state(NewState))  
+		do delete( state(State) ) + insert( state(NewState) ).
+	
+	% Record when we are entering or leaving a room.
+	forall percept(in(Place)) do insert( in(Place) ).
+	forall percept(not(in(Place))) do delete( in(Place) ).
+
+	% Exercise 2.1b: insert rules for handling percepts other than "sendonce" percepts.
+	% Update the place the agent is at
+	forall bel(at(Place)), percept(at(NewPlace))
+	   do delete(at(Place)) + insert(at(NewPlace)).
+	
+	%Record which blocks are in range and delete the ones that aren't.
+	forall percept(atBlock(Block)) do insert(atBlock(Block)).
+	forall percept(not(atBlock(Block))) do delete(atBlock(Block)).
+	
+	%Record which blocks the agent is holding and delete the ones that the agent isn't holding.
+	forall percept(holding(Block)) do insert(holding(Block)).
+	forall percept(not(holding(Block))) do delete(holding(Block)).
+	
+	%Update the sequence index
+	forall bel(sequenceIndex(Index)), percept(sequenceIndex(NewIndex))
+	do delete(sequenceIndex(Index)) + insert(sequenceIndex(NewIndex)).
+	
+	% Predicate color(BlockID, ColorID), it is always send only to the player who is in the same room as the blocks.
+	forall percept(color(Block, Color), in(Room)), not(bel(color(Block,Color), in(Room))) do insert(color(Block, Color)).
+	%forall bel(color(Block,Color),in(Room)), not(percept(color(Block,Color))) do delete(color(Block,Color)).
+	
+	%Check in which room which color of the block is except for the DropZone
+	forall bel(in(Room),color(Block,Color),not(in('DropZone'))) do insert(block(Block,Color,Room)).
+	forall bel(block(Block,Color,Room),in(Room)) , not(percept(color(Block,Color))) do delete(block(Block,Color,Room)).
+	
+	%For every room visited it will add the visited predicate in the belief base.
+	forall bel(in(Room)) do insert(visited(Room)).
+	
+	% Exercise 2.5b: insert code for goal management that allows an agent to systematically search for blocks. (if needed)
+	
+	%If the place hasnt been visited yet, it will implement a goal to go to that room and make sure that it isn't on an other goal to go to a Room.
+	if bel(nextColorInSeq(Color),not(block(Block,Color,Room)),room(Room),not(finishedGame), not(visited(Room)), not(holding(Y))), not(goal(in(X))) then adopt(in(Room)).
+	
+	%If the agent spotted a room which contains a block with the same color, it will create a goal to hold that block.
+	if not(goal(holding(X))),bel(block(Block,Color,Room), nextColorInSeq(Color), not(holding(Y))) then adopt(holding(Block)).
+	
+	%If the agent is on the goal to hold that block, it will have to go to that room which contains the block.
+	if goal(holding(Block)), bel(block(Block,Color,Room), nextColorInSeq(Color)), not(goal(in(X))) then adopt(in(Room)).
+	
+	%If the agent is on the goal to hold that block and it is in the room, it will go at that block.
+	if goal(holding(Block)), bel(in(Room),block(Block,Color,Room),not(atBlock(Block))), not(goal(atBlock(X))) then adopt(atBlock(Block)).
+	
+	%Assignment 4.2
+	%if the agent sees that the block he is trying to pick up is not there he will drop the goal
+	if goal(holding(Block)), bel(not(block(Block,Color,Room))) then drop(holding(Block)).
+	
+	%Assignment 4.3
+	%if the agent picked up a block and it is already delivered then it will drop the goal to go to DropZone and adopt a new one 
+	if goal(in('DropZone')), bel(holding(Block),nextColorInSeq(Color),not(color(Block,Color)),room(Room)) then drop(in('DropZone')) + adopt(in(Room)).
+	
+	%if the game is finished the remaining bots will go to a room to rest
+	if bel(finishedGame, not(in(Room)), not(occupied(Room))), goal(in(X)) then drop(in(X))+ adopt(in(Room)).
+	
+	%Assignment 4.4
+	forall bel(visited(Room)) do allother.send(visited(Room)).
+	
+	forall (Agent).sent(visited(Room)), bel(not(visited(Room))) do insert(visited(Room)).
+	
+	forall (Agent).sent(visited(Room)), goal(in(Room)),not(goal(in(OtherRoom))), bel(room(OtherRoom),not(visited(OtherRoom))) do drop(in(Room)) + adopt(in(OtherRoom)).
+	
+	forall bel(block(Block,Color,Room),in(Room)) do allother.send:(block(Block,Color,Room)).
+	
+	forall (Agent).sent:(block(Block,Color,Room)), bel(not(block(Block,Color,Room))), percept(block(Block,Color,Room)) do insert(block(Block,Color,Room)).
+	
+	%if bel(holding(Block),in('DropZone')) then allother.send:(holding(Block)).
+	
+	%if (Agent).sent:(holding(Block)), goal(holding(X)), bel(nextColorInSeq(Color),sequenceIndex(Index),block(X,Color,Room)), NewIndex is Index +1 then drop(holding(Block)) + delete(sequenceIndex(Index)) + insert(sequenceIndex(NewIndex)).   
+}

@@ -9,7 +9,8 @@
 	sequenceIndex/1,
 	block/3,
 	color/2,
-	visited/1.				% matches the zone/5 percept
+	visited/1,
+	occupied/1.				% matches the zone/5 percept
 
 % A room is a place with exactly one neighbour, i.e., there is only one way to get to and from that place.
 room(PlaceID) :- zone(_,PlaceID,_,_,Neighbours), length(Neighbours,1).
@@ -18,5 +19,12 @@ room(PlaceID) :- zone(_,PlaceID,_,_,Neighbours), length(Neighbours,1).
 %the next color is equeal to the Xth index in the list of the sequence
 nextColorInSeq(Color) :- sequence(Y), sequenceIndex(X), nth0(X,Y,Color).
 
+
 %Final predicate when the length of the list is equal to the sequenceIndex
+
+%get the color of a specific index
+indexColor(Index,Color):-sequence(Y),nth0(Index,Y,Color).
+
+%Final predicate when the length of the list is equal to the sequenceindex
+
 finishedGame:-sequence(List),length(List,X), sequenceIndex(X).

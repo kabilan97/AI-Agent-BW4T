@@ -15,11 +15,14 @@ module main {
 	%if you are holding a block you will pick up that block and adopt a goal to the dropzone
 	if goal(holding(Block)) then pickUp(Block)+adopt(in('DropZone')).
 	
+	
 	%if youre at the dropzone then you will drop the block
-	if bel(in('DropZone')) then putDown.
+	if bel(in('DropZone'),holding(Block),nextColorInSeq(Color),color(Block,Color)) then putDown.
+	
+	if bel(in(Room),not(in('DropZone')),holding(Block),nextColorInSeq(Color),not(color(Block,Color))) then putDown+allother.send(not(block(Block,Color,Room))).
 	
 	%if finished goal has been accomplishes then the agent will set its state to arrived 
-	if bel(finishedGame) then delete(state(traveling)) + insert(state(arrived)).
+	%if bel(finishedGame, not(in(Room)), not(occupied(Room))), goal(in(X)) then drop(in(X))+ adopt(in(Room)). 
 	
 	
 	
