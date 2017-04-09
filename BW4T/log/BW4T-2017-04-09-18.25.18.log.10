@@ -1,0 +1,69 @@
+18:48:17,427 - sequence
+18:48:17,427 - room RoomA3 contains blocks:  W Y B
+18:48:17,429 - room RoomA2 contains blocks:  Y G P B R
+18:48:17,429 - room RoomB3 contains blocks:  R R R
+18:48:17,429 - room RoomC1 contains blocks:  W R R
+18:48:17,429 - room RoomA1 contains blocks:  G G P
+18:48:17,429 - room RoomB2 contains blocks:  G W P O
+18:48:17,429 - room RoomC3 contains blocks:  P Y O
+18:48:17,429 - room RoomB1 contains blocks:  G Y G
+18:48:17,429 - room RoomC2 contains blocks:  O
+18:48:17,429 - sequence P W O Y G G
+18:48:23,546 - action Bot_2 goTo(RoomB3)
+18:48:23,549 - action Bot_1 goTo(RoomB3)
+18:48:23,571 - action Bot_3 goTo(RoomB3)
+18:48:26,801 - Bot Bot_2 collided.
+18:48:26,833 - Bot Bot_3 collided.
+18:48:26,847 - action Bot_2 goTo(RoomA1)
+18:48:26,876 - action Bot_3 goTo(RoomA1)
+18:48:26,878 - action Bot_1 goTo(RoomA1)
+18:48:29,833 - Bot Bot_3 collided.
+18:48:29,865 - action Bot_3 goTo(RoomA1)
+18:48:30,063 - Bot Bot_1 collided.
+18:48:30,114 - action Bot_1 goTo(RoomA1)
+18:48:30,281 - Bot Bot_3 collided.
+18:48:30,337 - action Bot_3 goTo(RoomA1)
+18:48:30,518 - Bot Bot_1 collided.
+18:48:30,592 - action Bot_1 goTo(RoomA1)
+18:48:30,745 - Bot Bot_3 collided.
+18:48:30,812 - action Bot_3 goTo(RoomA1)
+18:48:31,007 - Bot Bot_1 collided.
+18:48:31,075 - action Bot_1 goTo(RoomA1)
+18:48:31,226 - Bot Bot_3 collided.
+18:48:31,286 - action Bot_3 goTo(RoomA1)
+18:48:31,479 - Bot Bot_1 collided.
+18:48:31,524 - action Bot_1 goTo(RoomA1)
+18:48:31,693 - Bot Bot_3 collided.
+18:48:31,743 - action Bot_3 goTo(RoomA1)
+18:48:31,937 - Bot Bot_1 collided.
+18:48:32,001 - action Bot_1 goTo(RoomA1)
+18:48:32,155 - Bot Bot_3 collided.
+18:48:32,217 - action Bot_3 goTo(RoomA1)
+18:48:32,416 - Bot Bot_1 collided.
+18:48:32,476 - action Bot_1 goTo(RoomA1)
+18:48:32,626 - Bot Bot_3 collided.
+18:48:32,692 - action Bot_3 goTo(RoomA1)
+18:48:32,889 - Bot Bot_1 collided.
+18:48:32,953 - action Bot_1 goTo(RoomA1)
+18:48:33,107 - Bot Bot_3 collided.
+18:48:33,170 - action Bot_3 goTo(RoomA1)
+18:48:33,368 - Bot Bot_1 collided.
+18:48:33,394 - total time is 23 minutes and 1 seconds
+18:48:33,394 - agentsummary Bot_1 handicaps none
+18:48:33,394 - agentsummary robot gooddrops 0
+18:48:33,394 - agentsummary robot wrongdrops 0
+18:48:33,394 - agentsummary robot nmessage 0
+18:48:33,394 - agentsummary robot idletime 0.933
+18:48:33,394 - agentsummary robot nroomsentered 1
+18:48:33,394 - agentsummary Bot_2 handicaps none
+18:48:33,394 - agentsummary robot_0 gooddrops 0
+18:48:33,394 - agentsummary robot_0 wrongdrops 0
+18:48:33,394 - agentsummary robot_0 nmessage 0
+18:48:33,394 - agentsummary robot_0 idletime 0.378
+18:48:33,394 - agentsummary robot_0 nroomsentered 1
+18:48:33,394 - agentsummary Bot_3 handicaps none
+18:48:33,394 - agentsummary robot_1 gooddrops 0
+18:48:33,394 - agentsummary robot_1 wrongdrops 0
+18:48:33,394 - agentsummary robot_1 nmessage 0
+18:48:33,394 - agentsummary robot_1 idletime 0.992
+18:48:33,394 - agentsummary robot_1 nroomsentered 0

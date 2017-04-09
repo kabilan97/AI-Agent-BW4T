@@ -1,0 +1,100 @@
+16:45:09,945 - sequence
+16:45:09,946 - room RoomA3 contains blocks:  P B
+16:45:09,946 - room RoomA2 contains blocks:  W P W Y
+16:45:09,946 - room RoomB3 contains blocks:  G O O P Y
+16:45:09,946 - room RoomC1 contains blocks:  R R P Y W
+16:45:09,946 - room RoomA1 contains blocks:  Y G O P
+16:45:09,946 - room RoomB2 contains blocks:  O Y
+16:45:09,946 - room RoomC3 contains blocks:  W O O
+16:45:09,946 - room RoomB1 contains blocks:  W O
+16:45:09,946 - room RoomC2 contains blocks:  P
+16:45:09,946 - sequence W P R O W P
+16:45:16,067 - action Bot_1 goTo(RoomB3)
+16:45:16,071 - action Bot_3 goTo(RoomB3)
+16:45:16,073 - action Bot_2 goTo(RoomB3)
+16:45:19,322 - Bot Bot_3 collided.
+16:45:19,322 - Bot Bot_2 collided.
+16:45:19,355 - action Bot_2 goTo(RoomA1)
+16:45:19,383 - action Bot_3 goTo(RoomA1)
+16:45:19,390 - action Bot_1 goTo(RoomA1)
+16:45:22,257 - Bot Bot_3 collided.
+16:45:22,351 - action Bot_3 goTo(RoomA3)
+16:45:22,480 - Bot Bot_1 collided.
+16:45:22,511 - action Bot_2 goTo(RoomA3)
+16:45:22,544 - action Bot_1 goTo(RoomA3)
+16:45:23,767 - Bot Bot_1 collided.
+16:45:23,803 - action Bot_1 goTo(DropZone)
+16:45:23,834 - action Bot_3 goTo(DropZone)
+16:45:23,958 - Bot Bot_2 collided.
+16:45:23,996 - action Bot_2 goTo(DropZone)
+16:45:28,134 - Bot Bot_2 collided.
+16:45:28,172 - action Bot_2 goTo(DropZone)
+16:45:28,195 - Bot Bot_3 collided.
+16:45:28,216 - action Bot_1 goTo(RoomC2)
+16:45:28,246 - action Bot_3 goTo(DropZone)
+16:45:28,653 - Bot Bot_3 collided.
+16:45:28,718 - action Bot_3 goTo(DropZone)
+16:45:28,827 - action Bot_2 goTo(RoomC2)
+16:45:29,407 - action Bot_3 goTo(RoomC2)
+16:45:31,637 - action Bot_1 goTo(RoomB1)
+16:45:32,219 - action Bot_2 goTo(RoomB1)
+16:45:32,802 - action Bot_3 goTo(RoomB1)
+16:45:34,605 - action Bot_1 goToBlock(63)
+16:45:34,781 - action Bot_1 pickUp(63)
+16:45:34,892 - Bot Bot_2 collided.
+16:45:34,964 - action Bot_1 goTo(DropZone)
+16:45:35,039 - action Bot_2 goTo(RoomC1)
+16:45:35,746 - action Bot_3 goTo(RoomC1)
+16:45:37,174 - action Bot_2 pickUp(53)
+16:45:37,390 - action Bot_2 goTo(DropZone)
+16:45:38,305 - action Bot_3 goTo(RoomB2)
+16:45:38,721 - action Bot_1 putDown
+16:45:38,974 - action Bot_1 goTo(RoomB3)
+16:45:40,342 - action Bot_2 goTo(RoomB3)
+16:45:41,305 - action Bot_3 goTo(RoomB3)
+16:45:42,486 - Bot Bot_1 collided.
+16:45:42,532 - action Bot_1 goTo(RoomB3)
+16:45:42,637 - action Bot_3 goToBlock(47)
+16:45:42,809 - action Bot_3 pickUp(47)
+16:45:42,931 - Bot Bot_1 collided.
+16:45:42,962 - action Bot_3 goTo(DropZone)
+16:45:42,991 - action Bot_1 goTo(RoomA1)
+16:45:45,859 - action Bot_1 pickUp(57)
+16:45:46,173 - action Bot_1 goTo(DropZone)
+16:45:46,673 - action Bot_3 putDown
+16:45:46,926 - action Bot_3 goTo(RoomC1)
+16:45:49,942 - action Bot_3 goToBlock(49)
+16:45:50,070 - action Bot_3 pickUp(49)
+16:45:50,225 - action Bot_3 goTo(DropZone)
+16:45:50,754 - action Bot_1 goTo(RoomB3)
+16:45:53,098 - action Bot_3 putDown
+16:45:53,343 - action Bot_3 goTo(RoomB3)
+16:45:54,231 - Bot Bot_1 collided.
+16:45:54,296 - action Bot_1 goTo(RoomB3)
+16:45:54,694 - Bot Bot_1 collided.
+16:45:54,773 - action Bot_1 goTo(RoomB3)
+16:45:55,167 - Bot Bot_1 collided.
+16:45:55,226 - action Bot_1 goTo(RoomB3)
+16:45:55,621 - Bot Bot_1 collided.
+16:45:55,651 - action Bot_1 goTo(RoomB3)
+16:45:56,054 - Bot Bot_1 collided.
+16:45:56,111 - action Bot_1 goTo(RoomB3)
+16:45:56,404 - total time is 225 minutes and 5 seconds
+16:45:56,404 - agentsummary Bot_1 handicaps none
+16:45:56,404 - agentsummary robot gooddrops 1
+16:45:56,404 - agentsummary robot wrongdrops 0
+16:45:56,404 - agentsummary robot nmessage 0
+16:45:56,404 - agentsummary robot idletime 2.172
+16:45:56,404 - agentsummary robot nroomsentered 7
+16:45:56,404 - agentsummary Bot_2 handicaps none
+16:45:56,404 - agentsummary robot_0 gooddrops 0
+16:45:56,404 - agentsummary robot_0 wrongdrops 0
+16:45:56,404 - agentsummary robot_0 nmessage 0
+16:45:56,404 - agentsummary robot_0 idletime 1.321
+16:45:56,404 - agentsummary robot_0 nroomsentered 6
+16:45:56,404 - agentsummary Bot_3 handicaps none
+16:45:56,404 - agentsummary robot_1 gooddrops 2
+16:45:56,404 - agentsummary robot_1 wrongdrops 0
+16:45:56,404 - agentsummary robot_1 nmessage 0
+16:45:56,405 - agentsummary robot_1 idletime 2.307
+16:45:56,405 - agentsummary robot_1 nroomsentered 10

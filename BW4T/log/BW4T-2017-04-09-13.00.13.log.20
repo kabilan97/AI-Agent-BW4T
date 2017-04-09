@@ -1,0 +1,182 @@
+16:53:51,253 - sequence
+16:53:51,253 - room RoomA3 contains blocks:  Y Y B Y
+16:53:51,254 - room RoomA2 contains blocks:  G W
+16:53:51,254 - room RoomB3 contains blocks:  W B B
+16:53:51,254 - room RoomC1 contains blocks:  W P B R
+16:53:51,254 - room RoomA1 contains blocks:  R B B
+16:53:51,254 - room RoomB2 contains blocks:  O R B G
+16:53:51,254 - room RoomC3 contains blocks:  G Y
+16:53:51,254 - room RoomB1 contains blocks:  G Y W
+16:53:51,254 - room RoomC2 contains blocks:  W G B
+16:53:51,254 - sequence R W Y B G W
+16:53:58,502 - action Bot_1 goTo(RoomB3)
+16:53:58,527 - action Bot_3 goTo(RoomB3)
+16:53:58,531 - action Bot_2 goTo(RoomB3)
+16:54:01,809 - Bot Bot_2 collided.
+16:54:01,809 - Bot Bot_3 collided.
+16:54:01,844 - action Bot_2 goTo(RoomA1)
+16:54:01,846 - action Bot_3 goTo(RoomA1)
+16:54:01,873 - action Bot_1 goTo(RoomA1)
+16:54:04,736 - Bot Bot_3 collided.
+16:54:04,779 - action Bot_3 goTo(RoomA1)
+16:54:04,822 - action Bot_2 pickUp(51)
+16:54:04,986 - Bot Bot_1 collided.
+16:54:05,004 - action Bot_2 goTo(DropZone)
+16:54:05,050 - action Bot_1 goTo(RoomA3)
+16:54:05,177 - Bot Bot_3 collided.
+16:54:05,236 - action Bot_3 goTo(RoomA3)
+16:54:06,457 - Bot Bot_3 collided.
+16:54:06,489 - action Bot_3 goTo(DropZone)
+16:54:06,573 - action Bot_1 goTo(DropZone)
+16:54:09,393 - action Bot_2 putDown
+16:54:09,611 - action Bot_2 goTo(RoomB3)
+16:54:10,905 - action Bot_3 goTo(RoomB3)
+16:54:10,926 - Bot Bot_1 collided.
+16:54:10,984 - action Bot_1 goTo(DropZone)
+16:54:11,643 - action Bot_1 goTo(RoomB3)
+16:54:13,381 - action Bot_2 pickUp(44)
+16:54:13,435 - action Bot_2 goTo(DropZone)
+16:54:14,654 - action Bot_3 goTo(RoomC2)
+16:54:15,465 - action Bot_1 goTo(RoomC2)
+16:54:16,966 - action Bot_2 putDown
+16:54:17,192 - action Bot_2 goTo(RoomA3)
+16:54:17,594 - action Bot_3 goTo(RoomA3)
+16:54:18,446 - action Bot_1 goTo(RoomA3)
+16:54:21,280 - action Bot_3 pickUp(39)
+16:54:21,430 - action Bot_3 goTo(DropZone)
+16:54:21,537 - Bot Bot_2 collided.
+16:54:21,564 - action Bot_2 goTo(RoomA3)
+16:54:21,972 - Bot Bot_1 collided.
+16:54:22,011 - action Bot_1 goTo(RoomA3)
+16:54:22,108 - action Bot_2 pickUp(41)
+16:54:22,229 - action Bot_2 goTo(DropZone)
+16:54:22,407 - Bot Bot_1 collided.
+16:54:22,456 - action Bot_1 goTo(RoomA3)
+16:54:23,145 - action Bot_1 goToBlock(38)
+16:54:23,279 - action Bot_1 pickUp(38)
+16:54:23,399 - action Bot_1 goTo(DropZone)
+16:54:25,794 - action Bot_3 putDown
+16:54:26,014 - action Bot_3 goTo(RoomB3)
+16:54:26,822 - action Bot_2 goTo(RoomB3)
+16:54:28,162 - action Bot_1 goTo(RoomB3)
+16:54:29,828 - action Bot_3 goToBlock(45)
+16:54:29,978 - action Bot_3 pickUp(45)
+16:54:30,097 - action Bot_3 goTo(DropZone)
+16:54:30,362 - Bot Bot_2 collided.
+16:54:30,418 - action Bot_2 goTo(RoomB3)
+16:54:31,683 - Bot Bot_1 collided.
+16:54:31,718 - action Bot_1 goTo(RoomB3)
+16:54:32,118 - Bot Bot_1 collided.
+16:54:32,184 - action Bot_1 goTo(RoomB3)
+16:54:32,581 - Bot Bot_1 collided.
+16:54:32,626 - action Bot_1 goTo(RoomB3)
+16:54:33,027 - Bot Bot_1 collided.
+16:54:33,064 - action Bot_1 goTo(RoomB3)
+16:54:33,458 - Bot Bot_1 collided.
+16:54:33,495 - action Bot_1 goTo(RoomB3)
+16:54:33,829 - action Bot_3 putDown
+16:54:33,891 - Bot Bot_1 collided.
+16:54:33,922 - action Bot_1 goTo(RoomB3)
+16:54:34,033 - action Bot_3 goTo(RoomC2)
+16:54:34,326 - Bot Bot_1 collided.
+16:54:34,412 - action Bot_1 goTo(RoomB3)
+16:54:34,807 - Bot Bot_1 collided.
+16:54:34,854 - action Bot_1 goTo(RoomB3)
+16:54:35,255 - Bot Bot_1 collided.
+16:54:35,295 - action Bot_1 goTo(RoomB3)
+16:54:35,696 - Bot Bot_1 collided.
+16:54:35,728 - action Bot_1 goTo(RoomB3)
+16:54:36,127 - Bot Bot_1 collided.
+16:54:36,187 - action Bot_1 goTo(RoomB3)
+16:54:36,590 - Bot Bot_1 collided.
+16:54:36,652 - action Bot_1 goTo(RoomB3)
+16:54:37,055 - Bot Bot_1 collided.
+16:54:37,093 - action Bot_1 goTo(RoomB3)
+16:54:37,249 - action Bot_3 pickUp(64)
+16:54:37,391 - action Bot_3 goTo(DropZone)
+16:54:37,488 - Bot Bot_1 collided.
+16:54:37,557 - action Bot_1 goTo(RoomB3)
+16:54:37,950 - Bot Bot_1 collided.
+16:54:37,985 - action Bot_1 goTo(RoomB3)
+16:54:38,382 - Bot Bot_1 collided.
+16:54:38,424 - action Bot_1 goTo(RoomB3)
+16:54:38,823 - Bot Bot_1 collided.
+16:54:38,874 - action Bot_1 goTo(RoomB3)
+16:54:39,275 - Bot Bot_1 collided.
+16:54:39,328 - action Bot_1 goTo(RoomB3)
+16:54:39,729 - Bot Bot_1 collided.
+16:54:39,781 - action Bot_1 goTo(RoomB3)
+16:54:40,184 - Bot Bot_1 collided.
+16:54:40,222 - action Bot_1 goTo(RoomB3)
+16:54:40,506 - action Bot_3 putDown
+16:54:40,617 - Bot Bot_1 collided.
+16:54:40,665 - action Bot_1 goTo(RoomB3)
+16:54:40,731 - action Bot_3 goTo(RoomC2)
+16:54:41,058 - Bot Bot_1 collided.
+16:54:41,106 - action Bot_1 goTo(RoomB3)
+16:54:41,501 - Bot Bot_1 collided.
+16:54:41,544 - action Bot_1 goTo(RoomB3)
+16:54:41,947 - Bot Bot_1 collided.
+16:54:41,995 - action Bot_1 goTo(RoomB3)
+16:54:42,389 - Bot Bot_1 collided.
+16:54:42,447 - action Bot_1 goTo(RoomB3)
+16:54:42,840 - Bot Bot_1 collided.
+16:54:42,891 - action Bot_1 goTo(RoomB3)
+16:54:43,283 - Bot Bot_1 collided.
+16:54:43,340 - action Bot_1 goTo(RoomB3)
+16:54:43,734 - Bot Bot_1 collided.
+16:54:43,764 - action Bot_1 goTo(RoomB3)
+16:54:43,775 - action Bot_3 pickUp(63)
+16:54:44,093 - action Bot_3 goTo(DropZone)
+16:54:44,167 - Bot Bot_1 collided.
+16:54:44,190 - action Bot_1 goTo(RoomB3)
+16:54:44,595 - Bot Bot_1 collided.
+16:54:44,619 - action Bot_1 goTo(RoomB3)
+16:54:45,017 - Bot Bot_1 collided.
+16:54:45,060 - action Bot_1 goTo(RoomB3)
+16:54:45,458 - Bot Bot_1 collided.
+16:54:45,511 - action Bot_1 goTo(RoomB3)
+16:54:45,910 - Bot Bot_1 collided.
+16:54:45,945 - action Bot_1 goTo(RoomB3)
+16:54:46,341 - Bot Bot_1 collided.
+16:54:46,399 - action Bot_1 goTo(RoomB3)
+16:54:46,792 - Bot Bot_1 collided.
+16:54:46,845 - action Bot_1 goTo(RoomB3)
+16:54:47,232 - action Bot_3 putDown
+16:54:47,244 - Bot Bot_1 collided.
+16:54:47,302 - action Bot_1 goTo(RoomB3)
+16:54:47,425 - action Bot_3 goTo(RoomC2)
+16:54:47,699 - Bot Bot_1 collided.
+16:54:47,739 - action Bot_1 goTo(RoomB3)
+16:54:48,140 - Bot Bot_1 collided.
+16:54:48,189 - action Bot_1 goTo(RoomB3)
+16:54:48,585 - Bot Bot_1 collided.
+16:54:48,612 - action Bot_1 goTo(RoomB3)
+16:54:49,006 - Bot Bot_1 collided.
+16:54:49,051 - action Bot_1 goTo(RoomB3)
+16:54:49,453 - Bot Bot_1 collided.
+16:54:49,498 - action Bot_1 goTo(RoomB3)
+16:54:49,895 - Bot Bot_1 collided.
+16:54:49,936 - action Bot_1 goTo(RoomB3)
+16:54:50,338 - Bot Bot_1 collided.
+16:54:50,386 - action Bot_1 goTo(RoomB3)
+16:54:50,467 - action Bot_3 pickUp(63)
+16:54:50,655 - total time is 233 minutes and 59 seconds
+16:54:50,655 - agentsummary Bot_1 handicaps none
+16:54:50,655 - agentsummary robot gooddrops 0
+16:54:50,655 - agentsummary robot wrongdrops 0
+16:54:50,655 - agentsummary robot nmessage 0
+16:54:50,655 - agentsummary robot idletime 4.467
+16:54:50,655 - agentsummary robot nroomsentered 7
+16:54:50,655 - agentsummary Bot_2 handicaps none
+16:54:50,655 - agentsummary robot_0 gooddrops 2
+16:54:50,655 - agentsummary robot_0 wrongdrops 0
+16:54:50,655 - agentsummary robot_0 nmessage 0
+16:54:50,655 - agentsummary robot_0 idletime 1.457
+16:54:50,655 - agentsummary robot_0 nroomsentered 7
+16:54:50,655 - agentsummary Bot_3 handicaps none
+16:54:50,655 - agentsummary robot_1 gooddrops 3
+16:54:50,655 - agentsummary robot_1 wrongdrops 0
+16:54:50,655 - agentsummary robot_1 nmessage 0
+16:54:50,655 - agentsummary robot_1 idletime 2.254
+16:54:50,655 - agentsummary robot_1 nroomsentered 12

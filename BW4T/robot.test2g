@@ -21,11 +21,11 @@ test main with
 			
 			% 3. An agent that is holding the block that is not of the next needed color should not enter the drop zone.
 			%template A-incorrect used
-			never done (goTo("DropZone")), not(bel(holding(Block))),bel(nextColorInSeq(Color)), bel(color(Block, Color)).
+			never done (goTo("DropZone")), bel(holding(Block)), not(bel(nextColorInSeq(Color), color(Block, Color))).
 			
-			% 4. An agent should not leave the drop zone while holding a block.
+			% 4. An agent should not leave the drop zone while holding a block. The Block that he is holding is not the color that is next in Sequence
 			% Template A-incorrect.
-			never done(goTo(Location)), bel(holding(Block)),bel(in("DropZone")).
+			never done(goTo(Location)), bel(holding(Block), color(Block, Color), nextColorInSeq(Color)), bel(in("DropZone")).
 			
 		% Percepts that use P-Once change template (GOAL programming guide). The percepts are only received once. 
 		percept (zone(ID, Name, X, Y, Neighbours)) leadsto bel(zone(ID, Name, X, Y, Neighbours)).
@@ -58,13 +58,13 @@ test main with
 		percept (atBlock(NewBlock)),bel(atBlock(Block)) , not(bel(atBlock(Block)==atBlock(NewBlock))) leadsto not(bel(atBlock(Block))).
 		 
 		percept (color(Block, Color), in(Room)) leadsto bel (color(Block, Color), in(Room)).
-		not (percept(color(Block, Color), in(Room))), bel(color(Block, Color), in(Room)) leadsto not(bel(color(Block, Color), in(Room))).
+		%not(percept(color(Block, Color), in(Room))), bel(color(Block, Color), in(Room)) leadsto not(bel(color(Block, Color), in(Room))).
 		
 		bel(in(Room)) leadsto bel(visited(Room)).
 		
 		
 		%  Don't hold a block if you're holding a block.
-		never goal(holding(Block)), bel(holding(OtherBlock)).
+		never goal(holding(Block)), bel(holding(OtherBlock), color(OtherBlock, Color), nextColorInSeq(Color), in(room)).
 		
 		%If holding block goal has been met then it will delete the atblock goal.
 		not(goal(holding(Block))) leadsto not(goal(atBlock(Block))).
@@ -79,18 +79,26 @@ test main with
 		% Testing actions
 		
 		% If you're in a room, not in Dropzone, and youre at a block which has the next color in sequence you should have picked the block up already'
-		bel(in(Room),not(in('DropZone'))) leadsto done(pickUp(Block)).
+		bel(in(Room),not(in('DropZone')), block(Block, Color, Room), nextColorInSeq(Color), atBlock(Block), not(holding(Block))) leadsto done(pickUp(Block)).
 		% Never pick up a block in Dropzone and if youre not in a room. 
 		never done(pickUp(Block)), bel(in("DropZone"), not(in(Room))).
 		
 		% GoToBlock tests
 		never done(goToBlock(Block)), bel(in(Room), not(nextColorInSeq(Color)), color(Block, Color)).
 		
-		% PutDown test
-		% Never putDown a Block if you're not in DropZone
-		never done(putDown), bel(not(in("DropZone"))).
+		% Never putDown when youre not in room and not in DropZone
+		never done(putDown), bel(not(in(Room)), not(in("DropZone"))).
 		
+		% 4.2 Tests on the behaviour of the agents
 		
+		%Dont putdown the block that is not the next color in sequence in Dropzone
+		bel(in("DropZone"), holding(Block), not(nextColorInSeq(Color)), color(Block, Color), not(in(Room))) leadsto not(done(putDown)).
+
+		% If the agent is holding a block which is not anymore the next color in sequence, it should adopt a new goal, which is to go to
+		% to drop the block
+		bel(not(in("DropZone")), holding(Block), nextColorInSeq(Color), not(color(Block, Color))) leadsto goal(in(Place)).
+		
+
 		
 	}
 	post { true }

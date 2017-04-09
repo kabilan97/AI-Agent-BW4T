@@ -1,0 +1,30 @@
+16:51:15,558 - sequence
+16:51:15,558 - room RoomA3 contains blocks:  O O P O
+16:51:15,558 - room RoomA2 contains blocks:  O R Y G
+16:51:15,558 - room RoomB3 contains blocks:  P P
+16:51:15,558 - room RoomC1 contains blocks:  W G G
+16:51:15,558 - room RoomA1 contains blocks:  O B
+16:51:15,558 - room RoomB2 contains blocks:  R G W P Y
+16:51:15,559 - room RoomC3 contains blocks:  P W
+16:51:15,559 - room RoomB1 contains blocks: 
+16:51:15,559 - room RoomC2 contains blocks:  W W O Y O Y
+16:51:15,559 - sequence O O W O P R
+16:51:28,336 - total time is 230 minutes and 37 seconds
+16:51:28,337 - agentsummary Bot_1 handicaps none
+16:51:28,337 - agentsummary robot gooddrops 0
+16:51:28,337 - agentsummary robot wrongdrops 0
+16:51:28,337 - agentsummary robot nmessage 0
+16:51:28,337 - agentsummary robot idletime 0.0
+16:51:28,338 - agentsummary robot nroomsentered 0
+16:51:28,338 - agentsummary Bot_2 handicaps none
+16:51:28,338 - agentsummary robot_0 gooddrops 0
+16:51:28,338 - agentsummary robot_0 wrongdrops 0
+16:51:28,338 - agentsummary robot_0 nmessage 0
+16:51:28,338 - agentsummary robot_0 idletime 0.0
+16:51:28,338 - agentsummary robot_0 nroomsentered 0
+16:51:28,338 - agentsummary Bot_3 handicaps none
+16:51:28,338 - agentsummary robot_1 gooddrops 0
+16:51:28,338 - agentsummary robot_1 wrongdrops 0
+16:51:28,338 - agentsummary robot_1 nmessage 0
+16:51:28,338 - agentsummary robot_1 idletime 0.0
+16:51:28,338 - agentsummary robot_1 nroomsentered 0

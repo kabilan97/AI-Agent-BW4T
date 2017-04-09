@@ -1,0 +1,45 @@
+15:03:49,621 - sequence
+15:03:49,621 - room RoomA3 contains blocks:  W
+15:03:49,621 - room RoomA2 contains blocks:  O B B R
+15:03:49,622 - room RoomB3 contains blocks:  B W
+15:03:49,622 - room RoomC1 contains blocks:  P W P
+15:03:49,622 - room RoomA1 contains blocks:  Y P G R W O P G
+15:03:49,622 - room RoomB2 contains blocks:  W B
+15:03:49,622 - room RoomC3 contains blocks:  P
+15:03:49,622 - room RoomB1 contains blocks:  G W B
+15:03:49,622 - room RoomC2 contains blocks:  P P R W
+15:03:49,622 - sequence P Y P P G W
+15:03:57,901 - action Bot_1 goTo(RoomB3)
+15:03:57,906 - action Bot_2 goTo(RoomB3)
+15:03:57,929 - action Bot_3 goTo(RoomB3)
+15:04:01,378 - Bot Bot_2 collided.
+15:04:01,398 - Bot Bot_3 collided.
+15:04:01,428 - action Bot_2 goTo(RoomA1)
+15:04:01,430 - action Bot_3 goTo(RoomA1)
+15:04:01,461 - action Bot_1 goTo(RoomA1)
+15:04:03,945 - action Bot_2 goTo(RoomA1)
+15:04:03,948 - action Bot_3 goTo(RoomA1)
+15:04:03,992 - action Bot_2 goTo(RoomA1)
+15:04:04,000 - action Bot_3 goTo(RoomA1)
+15:04:04,045 - action Bot_3 goTo(RoomA1)
+15:04:04,074 - action Bot_2 goTo(RoomA1)
+15:04:04,075 - action Bot_1 goTo(RoomA1)
+15:04:04,081 - total time is 123 minutes and 12 seconds
+15:04:04,081 - agentsummary Bot_1 handicaps none
+15:04:04,081 - agentsummary robot gooddrops 0
+15:04:04,081 - agentsummary robot wrongdrops 0
+15:04:04,081 - agentsummary robot nmessage 0
+15:04:04,081 - agentsummary robot idletime 0.484
+15:04:04,081 - agentsummary robot nroomsentered 1
+15:04:04,081 - agentsummary Bot_2 handicaps none
+15:04:04,081 - agentsummary robot_0 gooddrops 0
+15:04:04,081 - agentsummary robot_0 wrongdrops 0
+15:04:04,081 - agentsummary robot_0 nmessage 0
+15:04:04,081 - agentsummary robot_0 idletime 0.45
+15:04:04,081 - agentsummary robot_0 nroomsentered 0
+15:04:04,081 - agentsummary Bot_3 handicaps none
+15:04:04,081 - agentsummary robot_1 gooddrops 0
+15:04:04,081 - agentsummary robot_1 wrongdrops 0
+15:04:04,081 - agentsummary robot_1 nmessage 0
+15:04:04,081 - agentsummary robot_1 idletime 0.445
+15:04:04,081 - agentsummary robot_1 nroomsentered 0
